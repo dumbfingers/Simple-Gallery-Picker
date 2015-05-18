@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:choiceMode="singleChoice"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:paddingTop="@dimen/screen_padding_half"
+    android:id="@+id/navigation_container"
+    tools:context=".NavigationDrawerFragment">
+
+    <include
+        android:id="@+id/library_all"
+        layout="@layout/library_picker_drawer_item" />
+
+    <View
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_hairline"
+        android:background="@color/black_divider" />
+
+    <ListView
+        android:id="@+id/library_folder_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/library_picker_drawer_item" />
+</LinearLayout>
+
